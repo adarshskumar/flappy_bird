@@ -48,7 +48,7 @@
 @media (max-width:520px){
 
     #game{
-        height:78vh;
+        height:70vh;
         width:100vw;
         background:url('flappy.jpg');
         background-size:cover;
@@ -56,7 +56,14 @@
         overflow:none;
 
     }
-    .btnPhone, .btnPhoneInner{
+    #block{
+        width:40px;
+        height:100%;
+    }
+    #hole{
+        width:40px;
+    }
+    /* .btnPhone, .btnPhoneInner{
         display:block;
     }
     .btnPhone{
@@ -78,5 +85,5 @@
     .btnPhone .btnPhoneInner h2{
         font-size:24px;
         
-    }
+    } */
 }
