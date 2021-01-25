@@ -2,6 +2,7 @@
     padding:0;
     margin:0;
     background-color: skyblue;
+    box-sizing:border-box;
 }
 #game{
     width:600px;
@@ -39,4 +40,44 @@
     position:absolute;
     top:100px;
     border-radius:100%;
+}
+.btnPhone, .btnPhoneInner{
+    display:none;
+}
+
+@media (max-width:520px){
+
+    #game{
+        height:500px;
+        width:100vw;
+        background:url('flappy.jpg');
+        background-size:cover;
+        background-position:center;
+        overflow:none;
+
+    }
+    
+    /* .btnPhone, .btnPhoneInner{
+        display:block;
+    }
+    .btnPhone{
+        width:100vw;
+        height:22vh;
+        background-color:purple;
+        position:relative;
+    }
+    .btnPhoneInner{
+        width:100%;
+        height:100%;
+        position:absolute;
+    }
+    .btnPhoneInner:focus{
+        outline:none;
+        background-color:lightpink;
+    }
+
+    .btnPhone .btnPhoneInner h2{
+        font-size:24px;
+        
+    } */
 }
