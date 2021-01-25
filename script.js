@@ -34,11 +34,13 @@ setInterval(function () {
       alert(`GameOver Ok Bei \nYour Score: ${counter}`);
       character.style.top = 100 + "px";
       counter = 0;
+      window.location.href = 'index.html';
     } else {
       alert(`GameOver Ok Bei \nYour Score: ${counter - 1}`);
 
       character.style.top = 100 + "px";
       counter = 0;
+      window.location.href = 'index.html';
     }
   }
 }, 10);
@@ -68,8 +70,4 @@ document.addEventListener("keydown", function (accessingJump) {
   }
 });
 
-if(window.innerWidth < 600){
-    document.addEventListener("touchstart", function (accessingJump) {
-          jump();
-})
-}
+
