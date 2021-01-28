@@ -1,21 +1,149 @@
 <!DOCTYPE html>
-<html lang="en" onclick="jump()">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>flappy bird</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="game">
-        <div id="block"></div>
-        <div id="hole"></div>
-        <div id="character"></div>
-    </div>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" id="sectionOne">
+        <div class="col-12 mt-md-0 text-center">
+            
+          <div class="row mt-5">
+            <div class="col-12 text-center">
+              <img src="./flappy.png" class=" ml-5 img-fluid img-responsive" alt="" />
+              <span><h1 class="gameName mx-auto">FLAPPY BIRD</h1></span>
+              <button
+                class="btn"
+                onclick="window.location.href = 'flappy.html'"
+              >
+                Flappy
+              </button>
+<!-- Button trigger modal -->
+<button type="button" class="btn" data-toggle="modal" data-target="#modelId">
+  Rules
+</button>
 
+<!-- Modal -->
+
+
+<script>
+    $('#exampleModal').on('show.bs.modal', event => {
+        var button = $(event.relatedTarget);
+        var modal = $(this);
+        // Use above variables to manipulate the DOM
+        
+    });
+</script>
+            
+
+
+        </div>
+      </div>
+
+     
+    </div>
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                    <div class="modal-header">
+                            <h5 class="modal-title">FLAPPY FLAPPY........</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <ol>
+                                    <li>players can control the charachter Kunjoos</li>
+                                    <li>navigate Kunjoos through equally sized gaps placed at random heights</li>
+                                    <li>Kunjoos descends automatically, ascends only if taps the screen or space bar</li>
+                                    <li>each successful pass gives one point</li>
+                                    <li>colliding the pipe or ground results 'ok bie'</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick = "window.location.href = 'flappy.html'">Flappy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+   
+  </body>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+    
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-color: #00ccff;
+      font-family: "Potta One", cursive;
+     
+      overflow: hidden;
+    }
+
+span{
+    background-color:white;
+}
+    .gameName {
+      font-size: 100px;
+    }
+
+    .btn {
+      border-radius: 5px;
+      border:2px solid steelblue;
+      font-size:larger;
+      margin-top:30px;
+    }
+
+    .btn:active{
+color:white;
+background:steelblue;
+border:2px solid white;
+    }
+
+    #header{
+        background-color:#096d86;
+    }
 
     
-    <!-- <div class = 'btnPhone'><button class = 'btnPhoneInner' onclick = 'jump()'><h2>Flappy</h2></button></div> -->
-</body>
-<script src="script.js"></script>
+
+   
+
+    @media (max-width: 600px) {
+      .gameName {
+        font-size: 50px;
+      }
+    }
+  </style>
 </html>
