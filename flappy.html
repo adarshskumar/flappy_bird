@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flappy bird</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <div id="block"></div>
+        <div id="hole"></div>
+        <div id="character"></div>
+    </div>
+
+    <div class="score">
+        <h5>Score: <span class = 'scoreName'></span></h5>
+        <h3 class = 'wickedTalk'>Game Begins</h3>
+        <button class = 'btn' onclick = `window.location.href = 'index.html'`>Exit</button>
+    </div>
+
+    <audio id = 'audio'>
+        <source src = './sound.mp3' type = 'audio/mpeg'>
+    </audio> 
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,2 +1,2 @@
 # flappy_bird
-flappy_bird game
+simple flappy bird game
